@@ -9,7 +9,7 @@ const App = () => {
   const streamUrl =
     'rtmps://rtmp.oneputt.app:443/live_92e2bc2e-7d91-41e3-9f66-8c8a8f1474d9/dubstream';
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <NodePlayerView
         style={styles.video}
         ref={playerRef}
@@ -25,6 +25,10 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'blue',
+  },
   video: {
     width,
     height,
